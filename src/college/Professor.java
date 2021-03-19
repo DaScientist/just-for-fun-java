@@ -10,8 +10,19 @@ package college;
 
 public class Professor extends Employee {
     public final String Subject;
+    public Professor(Address address, String name, String dob, String subject) {
+        super(address, name, dob, 50000);
+        Subject = subject;
+    }
     public Professor(Address address, String name, String dob, int salary, String subject) {
         super(address, name, dob, salary);
         Subject = subject;
+        Person a = new Person();
+
+    }
+
+    @Override
+    public int getSalary() {
+        return 60;
     }
 }

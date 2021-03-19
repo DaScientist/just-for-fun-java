@@ -6,16 +6,9 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package college;
+import college.Person;
 
-public class Pune extends Employee{
-
-    public Pune(Address address, String name, String dob, int salary) {
-        super(address, name, dob, salary);
-    }
-
-    @Override
-    public int getSalary() {
-        return 30;
+public class Principal extends Person {
+    public Principal() {
     }
 }

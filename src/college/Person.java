@@ -7,6 +7,12 @@ public class Person {
     final String name;
     final String dob;
 
+    public Person() {
+        address = null;
+        name = null;
+        dob = null;
+    }
+
     public Person(Address address, String name, String dob) {
         this.address = address;
         this.name = name;
@@ -25,8 +31,8 @@ public class Person {
         int todayDate = today.getDate();
         int todayMonth = today.getMonth() + 1;
         int todayYear = today.getYear() + 1900;
-        if(month - todayMonth < 0) {
-            if(date - todayDate < 0) {
+        if (month - todayMonth < 0) {
+            if (date - todayDate < 0) {
                 return todayYear - year;
             }
         }

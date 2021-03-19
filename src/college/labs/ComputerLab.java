@@ -6,16 +6,12 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package college;
+package college.labs;
 
-public class Pune extends Employee{
-
-    public Pune(Address address, String name, String dob, int salary) {
-        super(address, name, dob, salary);
-    }
+public class ComputerLab implements Lab {
 
     @Override
-    public int getSalary() {
-        return 30;
+    public String getLabname() {
+        return "Computer Lab";
     }
 }

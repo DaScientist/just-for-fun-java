@@ -12,22 +12,27 @@ public class MainProgram {
                 "Earth",
                 "Milky Way"
         );
-        Student mustan = new Student(
+        Person mustan = new Student(
                 myAdd,
                 "Mustanseer Sakerwala",
                 "20-03-1999",
                 4,
                 "170410107097"
         );
+        Person ayaan = new Person(
+                myAdd,
+                "Ayaan",
+                ""
+        );
 
-        Employee kss = new Professor(
+        Person kss = new Professor(
                 myAdd,
                 "Keyur Suthar Sir",
                 "14-02-1968",
                 70000,
                 "DS"
         );
-        Employee kanukaka = new Pune(
+        Person kanukaka = new Pune(
                 myAdd,
                 "Kanu Kaka",
                 "26-01-1945",
@@ -35,7 +40,7 @@ public class MainProgram {
         );
 
 
-        System.out.println(kss.getSalary());
-        System.out.println(kanukaka.getSalary());
+        System.out.println(kss.getAge());
+        System.out.println(kanukaka.getAge());
     }
 }

@@ -8,7 +8,7 @@
 
 package college;
 
-public class Employee extends Person {
+public abstract class Employee extends Person {
     private final int salary;
 
     public Employee(Address address, String name, String dob, int salary) {
@@ -16,7 +16,10 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    public int getSalary() {
-        return salary;
+    public abstract int getSalary();
+
+    @Override
+    public int getAge() {
+        return 50;
     }
 }
